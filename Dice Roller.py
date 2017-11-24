@@ -9,7 +9,12 @@ import random
 import time
 ## User inputs
 times = int( input('Amount of rolls: '))
-sides = int( input('Amount of sides: '))
+while(True):
+    sides = int( input('Amount of sides: '))
+    if(sides > 0):
+        break
+    else:
+        print("The dice needs to have at least 1 face (but that would be boring)")
 wait = float( input('Seconds in between each roll: '))
 ## Sets the dice rolls so far to zero
 timesSoFar = int( 0)
