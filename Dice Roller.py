@@ -1,4 +1,4 @@
-## Version 1.0.1
+## Version 1.0.3
 ## By Addison Djatschenko
 
 ##########################################################
@@ -11,10 +11,10 @@ import time
 times = int( input('Amount of rolls: '))
 while(True):
     sides = int( input('Amount of sides: '))
-    if(sides > 0):
+    if(sides > 3):
         break
     else:
-        print("The dice needs to have at least 1 face (but that would be boring)")
+        print("The dice needs to have at least 4 faces")
 wait = float( input('Seconds in between each roll: '))
 ## Sets the dice rolls so far to zero
 timesSoFar = int( 0)
