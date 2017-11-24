@@ -1,4 +1,4 @@
-## Version 1.0.3
+## Version 1.0.4
 ## By Addison Djatschenko
 
 ##########################################################
@@ -26,3 +26,6 @@ while timesSoFar != times:
     timesSoFar = timesSoFar+1
     ## Waits for wait seconds
     time.sleep(wait)
+while timesSoFar == timesSoFar:
+    ## Stops program without exiting
+    time.sleep(1)
