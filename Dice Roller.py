@@ -8,6 +8,7 @@ import random
 ## Allows time in between rolls
 import time
 ## User inputs
+ndice = int(input('Amount of dices: '))
 times = int( input('Amount of rolls: '))
 while(True):
     sides = int( input('Amount of sides: '))
@@ -20,11 +21,12 @@ wait = float( input('Seconds in between each roll: '))
 timesSoFar = int( 0)
 ## Runs until timesSoFar equals times
 while timesSoFar != times:
-    ## Displays current dice roll
-    print (random.randint(1, sides))
-    ## Increments timesSoFar
-    timesSoFar = timesSoFar+1
-    ## Waits for wait seconds
+    for i in range(ndice):
+	## Displays current dice roll
+        print (random.randint(1, sides))
+        ## Increments timesSoFar
+        timesSoFar = timesSoFar+1
+        ## Waits for wait seconds
     time.sleep(wait)
 while timesSoFar == timesSoFar:
     ## Stops program without exiting
