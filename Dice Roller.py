@@ -8,6 +8,7 @@ import random
 ## Allows time in between rolls
 import time
 ## User inputs
+ndice = int(input('Amount of dice:'))
 times = int( input('Amount of rolls: '))
 while(True):
     sides = int( input('Amount of sides: '))
@@ -17,15 +18,19 @@ while(True):
         print("The dice needs to have at least 4 faces")
 wait = float( input('Seconds in between each roll: '))
 ## Sets the dice rolls so far to zero
-timesSoFar = int( 0)
-## Runs until timesSoFar equals times
-while timesSoFar != times:
+
+    timesSoFar = int( 0)
+    ## Runs until timesSoFar equals times
+    while timesSoFar != times:
     ## Displays current dice roll
-    print (random.randint(1, sides))
+    
+        for i in range(ndice):
+
+            print (random.randint(1, sides))
     ## Increments timesSoFar
-    timesSoFar = timesSoFar+1
+            timesSoFar = timesSoFar+1
     ## Waits for wait seconds
-    time.sleep(wait)
-while timesSoFar == timesSoFar:
+        time.sleep(wait)
+    while timesSoFar == timesSoFar:
     ## Stops program without exiting
-    time.sleep(1)
+        time.sleep(1)
