@@ -20,10 +20,10 @@ wait = float( input('Seconds in between each roll: '))
 timesSoFar = int( 0)
 ## Runs until timesSoFar equals times
 while timesSoFar != times:
-    ## Displays current dice roll
+	## Displays current dice roll
     print (random.randint(1, sides))
     ## Increments timesSoFar
-    timesSoFar = timesSoFar+1
+    timesSoFar += 1
     ## Waits for wait seconds
     time.sleep(wait)
 while timesSoFar == timesSoFar:
