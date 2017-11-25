@@ -14,7 +14,7 @@ while(True):
     if(sides > 3):
         break
     else:
-        print("The dice needs to have at least 4 faces")
+        print("The dice needs to have at least four faces")
 wait = float( input('Seconds in between each roll: '))
 ## Sets the dice rolls so far to zero
 timesSoFar = int( 0)
