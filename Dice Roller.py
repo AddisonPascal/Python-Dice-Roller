@@ -1,5 +1,5 @@
-## Version 1.0.4
-## By Addison Djatschenko
+## Version 1.0.5
+## By Addison Djatschenko and some other editors on GitHub.
 
 ##########################################################
 
