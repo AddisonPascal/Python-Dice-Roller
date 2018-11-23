@@ -22,7 +22,7 @@ while(True):
     else:
         print("The dice needs to have at least four faces")
 while(True):
-    numberOfDices = int( input('Number of dices per roll: '))
+    numberOfDices = int( input('Number of dice per roll: '))
     if(numberOfDices > 0):
         break
     else:
