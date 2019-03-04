@@ -14,7 +14,6 @@ while(True):
         break
     else:
         print("The amount of rolls must be at least one")
-
 while(True):
     sides = int( input('Amount of sides: '))
     if(sides > 3):
