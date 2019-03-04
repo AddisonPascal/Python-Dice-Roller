@@ -34,7 +34,7 @@ while(True):
     else:
         print("The interval between each roll must be equal or greater than 0")
 ## Sets the dice rolls so far to zero
-timesSoFar = int( 0)
+timesSoFar = int(0)
 ## Runs until timesSoFar equals times
 while timesSoFar != times:
     ## Displays current dice roll
