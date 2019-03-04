@@ -22,8 +22,8 @@ while(True):
     else:
         print("The dice needs to have at least four faces")
 while(True):
-    numberOfDices = int( input('Number of dice per roll: '))
-    if(numberOfDices > 0):
+    numberOfDice = int( input('Number of dice per roll: '))
+    if(numberOfDice > 0):
         break
     else:
         print("The number of dice needs to be at least one")
@@ -38,7 +38,7 @@ timesSoFar = int( 0)
 ## Runs until timesSoFar equals times
 while timesSoFar != times:
     ## Displays current dice roll
-    print([random.randint(1, sides) for ndice in range(0,numberOfDices)])
+    print([random.randint(1, sides) for ndice in range(0,numberOfDice)])
     ## Increments timesSoFar
     timesSoFar += 1
     ## Waits for wait seconds
